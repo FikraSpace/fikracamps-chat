@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Context from './Context'
 
+let MSG = styled.div`
+  font-size: 2rem;
+`
+
+
 class MessageList extends Component {
   render(){
     return(
@@ -11,7 +16,7 @@ class MessageList extends Component {
           return (<div>
             {
               ctx.state.messages.map((item, i)=>{
-                return <div key={i}>item #{i}</div>
+                return <MSG key={i}>{item.content}</MSG>
               })
             }
           </div>)

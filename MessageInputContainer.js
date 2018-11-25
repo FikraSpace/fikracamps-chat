@@ -46,7 +46,7 @@ class MessageInputContainer extends Component {
                 onChange={(event)=>{
                   ctx.actions.updateInput(event.target.value)
                 }}
-                placeholder={ctx.state.title + ' from MessageInputContainer'}/>
+                placeholder="Write A Message"/>
                 <Button onClick={ctx.actions.updateList}>Send</Button>
               </Container>
             )
